@@ -14,7 +14,17 @@
             display: flex;
             align-items: center;
             justify-content: flex-start;
+            flex-direction: column; /* Stack items vertically */
             padding: 20px;
+            text-align: center; /* Center text horizontally */
+        }
+        .logo {
+            width: 100px; /* Adjust the size as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 10px; /* Space between logo and text */
+            border-radius: 50%; /* Rounded image */
+        }
+        .title {
             font-size: 48px;
             font-weight: bold;
             color: white;
@@ -27,19 +37,23 @@
                  3px  0px 0 #000,
                  0px -3px 0 #000,
                  0px  3px 0 #000;
+            margin-bottom: 10px; /* Space between titles */
         }
-        .logo {
-            width: 100px; /* Adjust the size as needed */
-            height: auto; /* Maintain aspect ratio */
-            margin-right: 20px; /* Space between text and image */
-            border-radius: 50%; /* Rounded image */
+        .red-text {
+            color: red; /* Color of the "ROBLOX" text */
+        }
+        .outline-text {
+            /* Text with black outline */
+            -webkit-text-stroke: 1px black;
+            text-stroke: 1px black;
         }
     </style>
 </head>
 <body>
     <header>
         <img class="logo" src="https://cdn.discordapp.com/attachments/1194260934697431082/1254123925655523338/70.png?ex=6678596c&is=667707ec&hm=020871a59ca3b3243f7390bdcfaae8e13312b162e82bdf58610f0df141c8c419&" alt="Logo">
-        FDJASVS X
+        <div class="title">FDJASVS X</div>
+        <div class="outline-text"><span class="red-text">We Are ROBLOX</span></div>
     </header>
 </body>
 </html>
