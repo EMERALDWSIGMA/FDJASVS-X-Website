@@ -11,9 +11,11 @@
             font-family: Arial, sans-serif;
         }
         header {
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
             padding: 20px;
-            font-size: 96px;
+            font-size: 48px;
             font-weight: bold;
             color: white;
             text-shadow: 
@@ -26,10 +28,17 @@
                  0px -3px 0 #000,
                  0px  3px 0 #000;
         }
+        .logo {
+            width: 100px; /* Adjust the size as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 20px; /* Space between text and image */
+            border-radius: 50%; /* Rounded image */
+        }
     </style>
 </head>
 <body>
     <header>
+        <img class="logo" src="https://ibb.co/9qpKK7Z" alt="Logo">
         FDJASVS X
     </header>
 </body>
