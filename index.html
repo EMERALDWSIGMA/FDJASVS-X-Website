@@ -21,7 +21,6 @@
             height: auto;
             border-radius: 50%;
             margin-bottom: 10px; /* Adjust as needed */
-            margin-top: -20px; /* Move the logo up */
         }
         .title {
             font-size: 48px;
@@ -37,7 +36,6 @@
                  0px -3px 0 #000,
                  0px  3px 0 #000;
             margin-bottom: 10px; /* Adjust as needed */
-            margin-top: -20px; /* Move FDJASVS X text up */
         }
         .red-text {
             color: red;
@@ -53,15 +51,23 @@
             font-weight: bold;
             color: black;
         }
+        .content {
+            flex-grow: 1; /* Takes remaining space */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
     <header>
-        <img class="logo" src="https://cdn.discordapp.com/attachments/1194260934697431082/1254123925655523338/70.png?ex=6678596c&is=667707ec&hm=020871a59ca3b3243f7390bdcfaae8e13312b162e82bdf58610f0df141c8c419&" alt="Logo">
         <div class="title">FDJASVS X</div>
+        <img class="logo" src="https://cdn.discordapp.com/attachments/1194260934697431082/1254123925655523338/70.png?ex=6678596c&is=667707ec&hm=020871a59ca3b3243f7390bdcfaae8e13312b162e82bdf58610f0df141c8c419&" alt="Logo">
         <div class="outline-text">We Are <span class="red-text">ROBLOX</span></div>
     </header>
 
-    <div class="plans-text">Plans & Pricing</div>
+    <div class="content">
+        <div class="plans-text">Plans & Pricing</div>
+    </div>
 </body>
 </html>
