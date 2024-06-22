@@ -10,16 +10,21 @@
             margin: 0;
             font-family: Arial, sans-serif;
             display: flex;
-            justify-content: center; /* Center content horizontally */
-            align-items: center; /* Center content vertically */
-            height: 100vh; /* Full viewport height */
-            text-align: center; /* Center text horizontally */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        header {
+            align-self: flex-start; /* Align header to the top */
+            margin-bottom: auto; /* Pushes header to the top */
         }
         .logo {
-            width: 100px; /* Adjust the size as needed */
-            height: auto; /* Maintain aspect ratio */
-            margin-bottom: 20px; /* Space between logo and title */
-            border-radius: 50%; /* Rounded image */
+            width: 100px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
         }
         .title {
             font-size: 48px;
@@ -34,22 +39,22 @@
                  3px  0px 0 #000,
                  0px -3px 0 #000,
                  0px  3px 0 #000;
-            margin-bottom: 10px; /* Space between titles */
+            margin-bottom: 10px;
         }
         .red-text {
-            color: red; /* Color of the "ROBLOX" text */
+            color: red;
         }
         .outline-text {
-            /* Text with black outline */
-            color: white; /* White text color */
+            color: white;
             -webkit-text-stroke: 1px black;
             text-stroke: 1px black;
-            margin-bottom: 20px; /* Space between "We Are ROBLOX" and title */
+            margin-bottom: 20px;
         }
         .plans-text {
             font-size: 36px;
             font-weight: bold;
-            color: black; /* Black text color for "Plans & Pricing" */
+            color: black;
+            margin-top: auto; /* Pushes plans-text to the middle */
         }
     </style>
 </head>
