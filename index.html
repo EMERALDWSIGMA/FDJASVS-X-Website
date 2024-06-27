@@ -65,6 +65,10 @@
             padding: 20px;
             width: 300px;
             text-align: center;
+            height: 400px; /* Fixed height for all plan frames */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .plan-title {
             font-size: 24px;
@@ -80,6 +84,7 @@
         .features {
             text-align: left;
             margin-bottom: 20px;
+            flex-grow: 1; /* Ensures features take available space */
         }
         .feature-item {
             margin-bottom: 10px;
@@ -92,12 +97,14 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 18px;
+            margin-bottom: 10px; /* Adjust as needed */
         }
         .coming-soon {
             font-size: 24px;
             font-weight: bold;
             color: #555;
-            margin-top: 40px;
+            margin-top: auto; /* Pushes the text to the bottom */
+            margin-bottom: 10px; /* Adjust as needed */
         }
     </style>
 </head>
